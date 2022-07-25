@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Totally Real Site man</title>
+<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+
+
+<input type="text" id="in" placeholder="team name">
+<button class="btn" onclick=getit()>Get Roaster</button>
+
+
+   <script id="playerGenerator" type="text/x-handlebars-template">
+   {{#each data}}
+   <div id="player">
+   <h2 class="text" id="name">{{firstName}} {{lastName}}</h2>
+    <p class="text">{{jersey}}</p>
+    <img  src="https://nba-players.herokuapp.com/players/{{ lastName }}/{{ firstName }}">
+       <p class="text">{{posittion}}</p>
+   </div>
+   {{/each}}
+   </script>
+
+<div class="team">
+
+
+
+
+
+</div>
+
+<script src="./handlebars/dist/handlebars.min.js"></script>
+<script src="./jquery/dist/jquery.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>

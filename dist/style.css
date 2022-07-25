@@ -1,0 +1,32 @@
+
+
+
+.team{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 8.5px;
+grid-row-gap: 9.7px;
+}
+
+#player{
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#in{
+    width:80%;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.btn{
+    width: 15%;
+    height: 50px;
+    background-color:#3498db;
+    /*font-weight: bold;*/
+    font-size: x-large;
+}
